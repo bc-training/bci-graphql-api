@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "identifier": "b8e34fc5-c44f-4b0b-9117-c4939c17ef0a",
+            "lastUpdateDate": "2015-12-09T08:30:13.757Z",
+            "interactionRoles": [
+                {
+                    "type": "CUSTOMER",
+                    "identifier": "19783221"
+                },
+                {
+                    "type": "CONTACT_PERSON",
+                    "identifier": "CDB19783221"
+                },
+                {
+                    "type": "CREATED_BY",
+                    "identifier": "id922403"
+                },
+                {
+                    "type": "MODIFIED_BY",
+                    "identifier": "id850981"
+                }
+            ],
+            "type": "COMPLAIN",
+            "status": {
+                "code": {
+                    "value": "WTEXT",
+                    "description": "Wait external"
+                },
+                "reason": "CBCUS",
+                "validFor": "2015-12-09T08:30:13.757Z"
+            },
+            "priority": "MEDIUM",
+            "title": "vm 6/09 om 9.04u II",
+            "description": "&lt;p&gt;Promo&lt;br /&gt;***&lt;/p&gt;&lt;p&gt;F klant zegt dat ze een mail van ons gekregen heeft voor de ratm web only de bizz mobile S aan 1&amp;euro; gedurende de eerste 6 mnd&lt;/p&gt;&lt;p&gt;ik lees dat dit ook niet is voor de bestaande klanten en ze zou haar oud bizz mobile S nr willen opzeggen voor dan met deze promo juist hetzelfde te nemen&lt;/p&gt;&lt;p&gt;volgens mij is dit niet mogelijk en lukt het haar hierdoor ook niet via het web&lt;/p&gt;&lt;p&gt;A is alleen geldig voor nieuwe klant met mobilus s niet bizz mobile s en gsm moet in pack zitten&lt;/p&gt;&lt;p&gt;klant heeft bizz pack dus niet mogeljk&lt;/p&gt;&lt;p&gt;C vm 6/09 om 9.04u 0495242526 geen voicemial&lt;/p&gt;&lt;p&gt;vm 5/09 om 14.30u 0495242526&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;"
+        }
+    ]
+}

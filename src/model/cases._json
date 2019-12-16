@@ -1,0 +1,173 @@
+{
+    "data": [
+        {
+            "lastUpdateDate": "2015-12-09T08:30:13.757Z",
+            "interactionRole": [
+                {
+                    "type": {
+                        "value": "CUSTOMER"
+                    },
+                    "partyRole": [
+                        {
+                            "customerIdentifier": {
+                                "id": "19783221",
+                                "idScope": {
+                                    "value": "PUB"
+                                },
+                                "idContext": {
+                                    "value": "CDB-F"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": {
+                        "value": "CONTACT_PERSON"
+                    },
+                    "partyRole": [
+                        {
+                            "customerIdentifier": {
+                                "id": "CDB19783221",
+                                "idScope": {
+                                    "value": "ENT"
+                                },
+                                "idContext": {
+                                    "value": "BCI"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": {
+                        "value": "CREATED_BY"
+                    },
+                    "partyRole": [
+                        {
+                            "employeeIdentifier": {
+                                "id": "id922403",
+                                "idScope": {
+                                    "value": "ENT"
+                                },
+                                "idContext": {
+                                    "value": "SAP"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": {
+                        "value": "MODIFIED_BY"
+                    },
+                    "partyRole": [
+                        {
+                            "employeeIdentifier": {
+                                "id": "id850981",
+                                "idScope": {
+                                    "value": "ENT"
+                                },
+                                "idContext": {
+                                    "value": "SAP"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "type": {
+                "value": "COMPL",
+                "valueDescription": {
+                    "defaultName": "Complaint"
+                }
+            },
+            "status": {
+                "code": {
+                    "value": "WTEXT",
+                    "valueDescription": {
+                        "defaultName": "Wait external"
+                    }
+                },
+                "reason": [
+                    {
+                        "value": "CBCUS"
+                    }
+                ],
+                "validFor": {
+                    "startTimeStamp": "2015-12-09T08:30:13.757Z"
+                }
+            },
+            "priority": {
+                "value": "MEDIUM",
+                "valueDescription": {
+                    "defaultName": "Medium"
+                }
+            },
+            "title": {
+                "defaultName": "vm 6/09 om 9.04u II"
+            },
+            "description": {
+                "defaultName": "&lt;p&gt;Promo&lt;br /&gt;***&lt;/p&gt;&lt;p&gt;F klant zegt dat ze een mail van ons gekregen heeft voor de ratm web only de bizz mobile S aan 1&amp;euro; gedurende de eerste 6 mnd&lt;/p&gt;&lt;p&gt;ik lees dat dit ook niet is voor de bestaande klanten en ze zou haar oud bizz mobile S nr willen opzeggen voor dan met deze promo juist hetzelfde te nemen&lt;/p&gt;&lt;p&gt;volgens mij is dit niet mogelijk en lukt het haar hierdoor ook niet via het web&lt;/p&gt;&lt;p&gt;A is alleen geldig voor nieuwe klant met mobilus s niet bizz mobile s en gsm moet in pack zitten&lt;/p&gt;&lt;p&gt;klant heeft bizz pack dus niet mogeljk&lt;/p&gt;&lt;p&gt;C vm 6/09 om 9.04u 0495242526 geen voicemial&lt;/p&gt;&lt;p&gt;vm 5/09 om 14.30u 0495242526&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;"
+            },
+            "duration": {
+                "startTimeStamp": "2015-12-19T08:30:13.757Z"
+            },
+            "identifier": {
+                "id": "b8e34fc5-c44f-4b0b-9117-c4939c17ef0a",
+                "idScope": {
+                    "value": "ENT"
+                },
+                "idContext": {
+                    "value": "BCI"
+                }
+            },
+            "charVal": [
+                {
+                    "name": "PRVGRPNAME",
+                    "value": "CCA-MM-compl-One-NL"
+                }
+            ],
+            "caseClassification": [
+                {
+                    "classification": {
+                        "value": "MASS-PROD-MOB-ABO",
+                        "context": "CATEGORY",
+                        "valueDescription": {
+                            "defaultName": "Subscription fees MM product (with mobile)"
+                        }
+                    }
+                },
+                {
+                    "classification": {
+                        "value": "NO-SPECIALTY-TYPE",
+                        "context": "SUB-CATEGORY",
+                        "valueDescription": {
+                            "defaultName": "No specialty type"
+                        }
+                    }
+                },
+                {
+                    "classification": {
+                        "value": "NO-DETAIL",
+                        "context": "DETAIL",
+                        "valueDescription": {
+                            "defaultName": "No detail"
+                        }
+                    }
+                }
+            ],
+            "assignedWorkforce": {
+                "employeeIdentifier": {
+                    "id": "id850983",
+                    "idScope": {
+                        "value": "ENT"
+                    },
+                    "idContext": {
+                        "value": "SAP"
+                    }
+                }
+            }
+        }
+    ]
+}

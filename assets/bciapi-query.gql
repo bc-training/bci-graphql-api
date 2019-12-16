@@ -1,0 +1,5 @@
+type Query {
+    pingBci: PongType
+    cases: [BciCaseType]
+    case(id: String!): BciCaseType
+}

@@ -1,0 +1,39 @@
+type BciCaseType {
+  identifier: ID!
+  lastUpdateDate: Date!
+  interactionRoles: [BciRole!]!
+  type: String!
+  status: BciStatusType!
+  priority: String!
+  title: String!
+  description: String
+}
+
+type BciCodeType {
+  value: String!
+  description: String
+}
+
+type BciRole {
+  type: String!
+  identifier: String!
+}
+
+type BciStatusType {
+  code: BciCodeType!
+  reason: String!
+  validFor: Date!
+}
+
+scalar Date
+
+type PongType {
+  dateTime: Date!
+  message: String!
+}
+
+type Query {
+  pingBci: PongType
+  cases: [BciCaseType]
+  case(id: String!): BciCaseType
+}

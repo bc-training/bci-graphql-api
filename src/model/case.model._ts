@@ -1,0 +1,357 @@
+export interface BciApplicationIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciCaseCharValType {
+    name: string;
+    value: string;
+    valueRange?: BciIntervalType;
+    validFor?: BciTimeIntervalType;
+}
+
+export interface BciCaseClassificationType {
+    classification: BciCodeValueType;
+}
+
+export interface BciCaseIdentifierType {
+    id: String;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciCaseItemIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciCaseItemType {
+    identifier: Array<BciCaseItemIdentifierType>;
+}
+
+export interface BciCaseRelationshipType {
+    type: BciCodeValueType;
+}
+
+export interface BciCaseRoleType {
+    type: BciCodeValueType;
+    partyRole?: Array<BciCaseRoleType>;
+    organisationalUnitIdentifier?: BciOrganisationalUnitIdentifierType;
+    contactMediumIdentifier?: Array<BciChoiceContactMediumIdentifierInCaseType>;
+    logicalResourceIdentifier?: Array<BciChoiceLogicalResourceIdentifierInCaseType>;
+}
+
+export interface BciCaseType {
+    targetResolutionTime?: string;
+    targetTechnicalResolutionTime?: string;
+    lastUpstringstring?: string;
+    isClosedOnCreate?: string;
+    isValid?: boolean;
+    wasReopened?: boolean;
+    interactionRole?: Array<BciCaseRoleType>;
+    type: BciCodeValueType;
+    status?: BciStatusType;
+    priority?: BciCodeValueType;
+    title: BciNameType;
+    description?: BciNameType;
+    comment?: Array<BciCommentType>;
+    duration: BciTimeIntervalType;
+    closureCode?: Array<BciCodeValueType>;
+    communicationLanguage?: BciLanguageCodeIsoAlpha2Type;
+    relationship?: BciCaseRelationshipType;
+    identifier: BciCaseIdentifierType;
+    item?: Array<BciCaseItemType>;
+    charVal?: Array<BciCaseCharValType>;
+    caseClassification: Array<BciCaseClassificationType>;
+    channelIdentifier?: Array<BciChoiceChannelIdentifierInCaseType>;
+    assignedWorkforce?: BciChoiceAssignedWorkforceForCaseType;
+}
+
+export interface BciChannelIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciChoiceAssignedWorkforceForCaseType {
+    workforceQueueIdentifier: BciWorkforceQueueIdentifierType;
+    employeeIdentifier: BciEmployeeIdentifierType;
+}
+
+export interface BciChoiceBusinessInteractionInCaseType {
+    opportunityIdentifier: BciOpportunityIdentifierType;
+    customerProjectIdentifier: BciCustomerProjectIdentifierType;
+    taskIdentifier: BciTaskIdentifierType;
+    workOrderIdentifier: BciWorkOrderIdentifierType;
+    provisioningOrderIdentifier: BciProvisioningOrderIdentifierType;
+    caseIdentifier: BciCaseIdentifierType;
+    customerOrderIdentifier: BciCustomerOrderIdentifierType;
+}
+
+export interface BciChoiceChannelIdentifierInCaseType {
+    channelIdentifier: BciChannelIdentifierType;
+    salesChannelIdentifier: BciSalesChannelIdentifierType;
+}
+
+export interface BciChoiceContactMediumIdentifierInCaseType {
+    EMailContactIdentifier: BcieMailContactIdentifierType;
+    phoneContactIdentifier: BciPhoneContactIdentifierType;
+    postalContactIdentifier: BciPostalContactIdentifierType;
+}
+
+export interface BciChoiceLogicalResourceIdentifierInCaseType {
+    applicationIdentifier: BciApplicationIdentifierType;
+}
+
+export interface BciChoicePartyIdentifierInPartyContactType {
+    personIdentifier: BciPersonIdentifierType;
+    organisationIdentifier: BciOrganisationIdentifierType;
+}
+
+export interface BciChoicePartyRoleInCaseType {
+    employeeIdentifier: BciEmployeeIdentifierType;
+    customerIdentifier: BciCustomerIdentifierType;
+    registeredEndUserIdentifier: BciRegisteredEndUserIdentifierType;
+    visitorIdentifier: BciVisitorIdentifierType;
+    serviceDeskPartnerIdentifier: BciServiceDeskPartnerIdentifierType;
+}
+
+export interface BciClientType {
+    bciUrl: string;
+    timeoutInMillis: number;
+}
+
+export interface BciCodeValueType {
+    codeSystem?: string;
+    codeSystemVersion?: string;
+    codeDescription?: string;
+    value: string;
+    context?: string;
+    valueDescription?: BciNameType;
+}
+
+export interface BciCommentType {
+    comment: string;
+    language: BciLanguageCodeIsoAlpha2Type;
+    type: BciCodeValueType;
+}
+
+export interface BciCustomerIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciCustomerOrderIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciCustomerProjectIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BcieMailContactCharValType {
+    characteristicName: string;
+    value: string;
+    validFor?: BciTimeIntervalType;
+    valueRange?: BciIntervalType;
+}
+
+export interface BcieMailContactIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BcieMailContactType {
+    EMailAddress: string;
+    isPreferred?: boolean;
+    isMarketingAllowed?: boolean;
+    context?: Array<BciCodeValueType>;
+    status?: BciCodeValueType;
+    validFor?: BciTimeIntervalType;
+    trustLevel?: BciCodeValueType;
+    identifier?: BcieMailContactIdentifierType;
+    partyIdentifier?: Array<BciChoicePartyIdentifierInPartyContactType>;
+    charVal?: Array<BcieMailContactCharValType>;
+}
+
+export interface BciEmployeeIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciGeographicAddressIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciIntervalType {
+    low: string;
+    high: string;
+}
+
+export interface BciLabelType {
+    text?: string;
+    language: BciLanguageCodeIsoAlpha2Type;
+}
+
+export interface BciLanguageCodeIsoAlpha2Type {
+    alpha2Code: string;
+    idScope?: BciCodeValueType;
+}
+
+export interface BciNameType {
+    defaultName: string;
+    type?: BciCodeValueType;
+    languageName?: Array<BciLabelType>;
+}
+
+export interface BciOpportunityIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciOrganisationalUnitIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciOrganisationIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciPersonIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciPhoneContactCharValType {
+    characteristicName: string;
+    value: string;
+    validFor?: BciTimeIntervalType;
+    valueRange?: BciIntervalType;
+}
+
+export interface BciPhoneContactIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciPhoneContactType {
+    isPreferred?: boolean;
+    isMarketingAllowed?: boolean;
+    phoneNumber: BciTelType;
+    type?: BciCodeValueType;
+    context?: Array<BciCodeValueType>;
+    status?: BciCodeValueType;
+    validFor?: BciTimeIntervalType;
+    trustLevel?: BciCodeValueType;
+    identifier?: BciPhoneContactIdentifierType;
+    partyIdentifier?: Array<BciChoicePartyIdentifierInPartyContactType>;
+    charVal?: Array<BciPhoneContactCharValType>;
+}
+
+export interface BciPostalContactCharValType {
+    characteristicName: string;
+    value: string;
+    validFor?: BciTimeIntervalType;
+    valueRange?: BciIntervalType;
+}
+
+export interface BciPostalContactIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciPostalContactType {
+    isPreferred?: boolean;
+    isMarketingAllowed?: boolean;
+    context?: Array<BciCodeValueType>;
+    status?: BciCodeValueType;
+    validFor?: BciTimeIntervalType;
+    trustLevel?: BciCodeValueType;
+    identifier: BciPostalContactIdentifierType;
+    partyIdentifier?: Array<BciChoicePartyIdentifierInPartyContactType>;
+    charVal?: Array<BciPostalContactCharValType>;
+    geographicAddressIdentifier?: BciGeographicAddressIdentifierType;
+}
+
+export interface BciProvisioningOrderIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciRegisteredEndUserIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}
+
+export interface BciSalesChannelIdentifierType {
+    id: string;
+    idContext?: BciCodeValueType;
+    idScope?: BciCodeValueType;
+}
+
+export interface BciServiceDeskPartnerIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciStatusType {
+    code: BciCodeValueType;
+    description?: BciNameType;
+    reason?: Array<BciCodeValueType>;
+    validFor?: BciTimeIntervalType;
+}
+
+export interface BciTaskIdentifierType {
+    noop?: string;
+}
+
+export interface BciTelType {
+    nationalNumber: string;
+    numberingPlan?: BciCodeValueType;
+    countryPrefix?: BciCodeValueType;
+}
+
+export interface BciTimeIntervalType {
+    startTimeStamp: string;
+    endTimeStamp?: string;
+}
+
+export interface BciVisitorIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciWorkforceQueueIdentifierType {
+    id: string;
+    idScope: BciCodeValueType;
+    idContext: BciCodeValueType;
+}
+
+export interface BciWorkOrderIdentifierType {
+    id: string;
+    idScope?: BciCodeValueType;
+    idContext?: BciCodeValueType;
+}

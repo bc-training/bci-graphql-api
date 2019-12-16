@@ -1,0 +1,17 @@
+overwrite: true
+schema: 
+  './assets/**/*.gql'
+# config: 
+#   federation: true
+documents: null
+generates:
+  ./src/model/generated/bciapi.model.ts:
+    config: 
+      defaultMapper: any
+      contextType: ../../core/graphql/graphql-context#GraphQLContext
+    plugins:
+      - typescript
+      - typescript-resolvers
+  ./src/model/generated/bciapi.schema-ast.graphql:
+    plugins:
+      - schema-ast      
